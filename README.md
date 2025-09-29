@@ -22,21 +22,52 @@
 - **Save & Manage**: Store your favorite itineraries in the cloud
 - **Multi-page Flow**: Intuitive navigation between search, places, and itinerary pages
 
+## 📱 Demo Screenshots
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center" width="33%">
+        <img src="assets/1.png" alt="Homepage" width="200"/>
+        <br><strong>1. Homepage</strong>
+      </td>
+      <td align="center" width="33%">
+        <img src="assets/2.png" alt="Search Page" width="200"/>
+        <br><strong>2. Search & Preferences</strong>
+      </td>
+      <td align="center" width="33%">
+        <img src="assets/3.png" alt="Places Selection" width="200"/>
+        <br><strong>3. Choose Places</strong>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" width="33%">
+        <img src="assets/4.png" alt="Generated Itinerary" width="200"/>
+        <br><strong>4. AI Itinerary</strong>
+      </td>
+      <td align="center" width="33%">
+        <img src="assets/5.png" alt="Saved Trips" width="200"/>
+        <br><strong>5. Saved Trips</strong>
+      </td>
+      <td align="center" width="33%">
+        <img src="assets/6.png" alt="User Profile" width="200"/>
+        <br><strong>6. User Profile</strong>
+      </td>
+    </tr>
+  </table>
+</div>
+
 ## 🏗️ Architecture
 
 ### **Frontend** (Next.js)
 - **Framework**: Next.js 15.3.4 with Pages Router
 - **Styling**: Tailwind CSS with custom components
-- **Icons**: Lucide React for consistent iconography
-- **State Management**: React Hooks with sessionStorage persistence
 - **Authentication**: Firebase Auth with Google Sign-In
 
 ### **Backend** (FastAPI)
 - **Framework**: FastAPI with Python
 - **AI Integration**: Google Gemini 2.0 Flash for itinerary generation
 - **APIs**: Google Places API for place search and photos
-- **CORS**: Configured for cross-origin requests
-- **Environment**: Virtual environment with pip dependencies
 
 ### **Database** (Firebase)
 - **Authentication**: Firebase Auth for user management
@@ -53,7 +84,7 @@
 
 ### 1. Clone the Repository
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/hazel-mittal/TripCraft.git
 cd AI-Travel-Planner
 ```
 
@@ -166,19 +197,6 @@ Visit `http://localhost:3000` to see TripCraft in action! 🎉
 - **CORS**: Properly configured for development and production
 - **Input Validation**: Client and server-side validation
 
-## 🚀 Deployment
-
-### Frontend (Vercel)
-```bash
-npm run build
-# Deploy to Vercel with environment variables
-```
-
-### Backend (Railway/Heroku)
-```bash
-# Configure production environment variables
-# Deploy with uvicorn main:app --host 0.0.0.0 --port $PORT
-```
 ---
 
 **Happy Traveling with TripCraft! ✈️🌍**
