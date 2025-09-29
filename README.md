@@ -33,25 +33,25 @@
       </td>
       <td align="center" width="33%">
         <img src="assets/2.png" alt="Search Page: Destination" width="200"/>
-        <br><strong>2. Search & Preferences</strong>
+        <br><strong>2. Search Page: Destination</strong>
       </td>
       <td align="center" width="33%">
         <img src="assets/3.png" alt="Search Page: Trip type/prefrences" width="200"/>
-        <br><strong>3. Choose Places</strong>
+        <br><strong>3. Search Page: Trip type/prefrences</strong>
       </td>
     </tr>
     <tr>
       <td align="center" width="33%">
         <img src="assets/4.png" alt="Places Selection" width="200"/>
-        <br><strong>4. AI Itinerary</strong>
+        <br><strong>4. Choose Places</strong>
       </td>
       <td align="center" width="33%">
         <img src="assets/5.png" alt="Generated Itinerary" width="200"/>
-        <br><strong>5. Saved Trips</strong>
+        <br><strong>5. AI Itinerary</strong>
       </td>
       <td align="center" width="33%">
         <img src="assets/6.png" alt="Saved Trips" width="200"/>
-        <br><strong>6. User Profile</strong>
+        <br><strong>6. Saved Trips</strong>
       </td>
     </tr>
   </table>
