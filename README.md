@@ -32,25 +32,25 @@
         <br><strong>1. Homepage</strong>
       </td>
       <td align="center" width="33%">
-        <img src="assets/2.png" alt="Search Page" width="200"/>
+        <img src="assets/2.png" alt="Search Page: Destination" width="200"/>
         <br><strong>2. Search & Preferences</strong>
       </td>
       <td align="center" width="33%">
-        <img src="assets/3.png" alt="Places Selection" width="200"/>
+        <img src="assets/3.png" alt="Search Page: Trip type/prefrences" width="200"/>
         <br><strong>3. Choose Places</strong>
       </td>
     </tr>
     <tr>
       <td align="center" width="33%">
-        <img src="assets/4.png" alt="Generated Itinerary" width="200"/>
+        <img src="assets/4.png" alt="Places Selection" width="200"/>
         <br><strong>4. AI Itinerary</strong>
       </td>
       <td align="center" width="33%">
-        <img src="assets/5.png" alt="Saved Trips" width="200"/>
+        <img src="assets/5.png" alt="Generated Itinerary" width="200"/>
         <br><strong>5. Saved Trips</strong>
       </td>
       <td align="center" width="33%">
-        <img src="assets/6.png" alt="User Profile" width="200"/>
+        <img src="assets/6.png" alt="Saved Trips" width="200"/>
         <br><strong>6. User Profile</strong>
       </td>
     </tr>
