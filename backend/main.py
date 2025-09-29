@@ -238,15 +238,29 @@ Return only the JSON object above, nothing else.
         response = model.generate_content(prompt)
         itinerary_text = response.text.strip()
 
-        # Clean the response - remove markdown code blocks if present
-        if itinerary_text.startswith("```json"):
-            itinerary_text = itinerary_text[7:]  # Remove ```json
-        if itinerary_text.startswith("```"):
-            itinerary_text = itinerary_text[3:]   # Remove ```
-        if itinerary_text.endswith("```"):
-            itinerary_text = itinerary_text[:-3]  # Remove trailing ```
+        # Clean the response - remove markdown code blocks and extra text
+        print(f"Raw AI response: {itinerary_text[:200]}...")  # Debug log
         
+        # Remove markdown code blocks
+        if itinerary_text.startswith("```json"):
+            itinerary_text = itinerary_text[7:]
+        elif itinerary_text.startswith("```"):
+            itinerary_text = itinerary_text[3:]
+        
+        if itinerary_text.endswith("```"):
+            itinerary_text = itinerary_text[:-3]
+        
+        # Remove any leading/trailing whitespace
         itinerary_text = itinerary_text.strip()
+        
+        # Find the first { and last } to extract just the JSON
+        first_brace = itinerary_text.find('{')
+        last_brace = itinerary_text.rfind('}')
+        
+        if first_brace != -1 and last_brace != -1 and last_brace > first_brace:
+            itinerary_text = itinerary_text[first_brace:last_brace + 1]
+        
+        print(f"Cleaned JSON: {itinerary_text[:200]}...")  # Debug log
 
         # Attempt to parse JSON
         try:
@@ -254,6 +268,8 @@ Return only the JSON object above, nothing else.
             # Wrap the data in the expected format
             return {"itinerary": itinerary_data}
         except json.JSONDecodeError as e:
+            print(f"JSON Parse Error: {str(e)}")
+            print(f"Problematic JSON: {itinerary_text}")
             return {"itinerary": None, "error": f"AI did not return valid JSON: {str(e)}", "raw": itinerary_text}
 
     except Exception as e:

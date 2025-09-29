@@ -6,28 +6,21 @@
 
 ## 🌟 Features
 
-### 🎯 **AI-Powered Itinerary Generation**
+### **AI-Powered Itinerary Generation**
 - **Smart Planning**: Uses Google Gemini AI to create detailed, day-by-day itineraries
 - **Personalized Recommendations**: Tailored suggestions based on your preferences, budget, and travel style
 - **Real-time Data**: Integrates with Google Places API for accurate, up-to-date information
 
-### 🗺️ **Intelligent Place Discovery**
+### **Intelligent Place Discovery**
 - **Autocomplete Search**: Google Places Autocomplete for destination input
 - **Categorized Results**: Places organized by interests (Nature, Culture, Food, etc.)
 - **Location-Aware**: Biased search results to your chosen destination
 - **Rich Media**: High-quality photos from Google Places API
 
-### 👤 **User Experience**
+### **User Experience**
 - **Google Sign-In**: Secure authentication with Firebase
 - **Save & Manage**: Store your favorite itineraries in the cloud
-- **Responsive Design**: Beautiful UI that works on all devices
 - **Multi-page Flow**: Intuitive navigation between search, places, and itinerary pages
-
-### 🎨 **Modern UI/UX**
-- **Lucide Icons**: Consistent, professional iconography
-- **Tailwind CSS**: Modern, responsive styling
-- **Gradient Designs**: Beautiful visual elements
-- **Interactive Cards**: Engaging place and activity displays
 
 ## 🏗️ Architecture
 
@@ -122,20 +115,17 @@ Visit `http://localhost:3000` to see TripCraft in action! 🎉
 
 ### 2. **Discover Places**
 - Browse AI-curated places by category
-- View high-quality photos and details
 - Select specific places to include (optional)
 - Let AI surprise you with recommendations
 
 ### 3. **Get Your Itinerary**
 - Receive a detailed day-by-day plan
 - See activities with times, costs, and tips
-- View beautiful photos for each activity
 - Save your itinerary to your account
 
 ### 4. **Manage Your Trips**
 - Access all saved itineraries
 - View trip details and photos
-- Delete trips you no longer need
 - Sign in from any device to access your trips
 
 ## 🛠️ API Endpoints
@@ -167,21 +157,6 @@ Visit `http://localhost:3000` to see TripCraft in action! 🎉
 4. Set up security rules for user data
 5. Create composite index: `trips` collection with `userId` and `createdAt`
 
-## 🎨 UI Components
-
-### **Design System**
-- **Colors**: Blue and purple gradients for primary elements
-- **Typography**: Clean, readable fonts with proper hierarchy
-- **Spacing**: Consistent padding and margins using Tailwind
-- **Icons**: Lucide React for professional iconography
-- **Cards**: Elevated cards with shadows and hover effects
-
-### **Key Components**
-- `Navbar` - Global navigation with user authentication
-- `GoogleSignIn` - Styled Google authentication button
-- `UserProfile` - User menu with sign-out functionality
-- `Button` - Consistent button styling across the app
-- `Card` - Reusable card components for content display
 
 ## 🔒 Security & Privacy
 
@@ -204,37 +179,6 @@ npm run build
 # Configure production environment variables
 # Deploy with uvicorn main:app --host 0.0.0.0 --port $PORT
 ```
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- **Google** for Places API and Gemini AI
-- **Firebase** for authentication and database services
-- **Next.js** and **FastAPI** for the robust frameworks
-- **Tailwind CSS** for the beautiful styling system
-- **Lucide** for the comprehensive icon library
-
-## 📞 Support
-
-If you encounter any issues or have questions:
-
-1. Check the [Issues](https://github.com/your-repo/issues) page
-2. Create a new issue with detailed information
-3. Include error messages and steps to reproduce
-
 ---
 
 **Happy Traveling with TripCraft! ✈️🌍**
-
-*Built with ❤️ using Next.js, FastAPI, and Google AI*
